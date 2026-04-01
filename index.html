@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <meta name="description" content="TYOFARM – Menyediakan Hewan Aqiqah & Qurban Sehat dan Sesuai Syariat. Gratis biaya perawatan dan pengiriman sampai lokasi. Hubungi Mizan: 0896-2285-8666 | Adityo: 0822-1147-2375" />
+  <meta name="theme-color" content="#1e6b2e" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="TYOFARM" />
+  <meta property="og:title" content="TYOFARM – Hewan Aqiqah & Qurban" />
+  <meta property="og:description" content="Menyediakan hewan aqiqah & qurban sehat dan sesuai syariat. Gratis pengiriman sampai lokasi." />
+  <meta property="og:type" content="website" />
+  <title>TYOFARM – Hewan Aqiqah &amp; Qurban Sehat &amp; Sesuai Syariat</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Amiri:wght@400;700&family=Nunito:wght@700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════ SPLASH SCREEN ═══════════════════ -->
+  <div id="splash" class="splash-screen">
+    <div class="splash-content">
+      <div class="splash-logo-wrap">
+        <span class="splash-emoji">🐑</span>
+        <h1 class="splash-brand">TYOFARM</h1>
+      </div>
+      <p class="splash-tagline">Hewan Aqiqah &amp; Qurban</p>
+      <div class="splash-bar"><div class="splash-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════ NAVBAR ═══════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <div class="nav-brand">
+        <span class="brand-emoji">🐑</span>
+        <span class="brand-name">TYOFARM</span>
+      </div>
+      <button class="burger" id="menuBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-drawer" id="navDrawer">
+      <a href="#layanan" class="nav-link" onclick="closeMenu()">Layanan</a>
+      <a href="#hewan" class="nav-link" onclick="closeMenu()">Pilihan Hewan</a>
+      <a href="#keunggulan" class="nav-link" onclick="closeMenu()">Keunggulan</a>
+      <a href="#proses" class="nav-link" onclick="closeMenu()">Proses Kami</a>
+      <a href="#kontak" class="nav-link" onclick="closeMenu()">Kontak</a>
+      <a href="https://wa.me/6289622858666" class="nav-wa" target="_blank" onclick="closeMenu()">
+        📲 Pesan Sekarang
+      </a>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════ HERO ═══════════════════ -->
+  <section class="hero" id="hero">
+    <!-- Decorative Islamic patterns -->
+    <div class="hero-pattern"></div>
+    <div class="hero-glow g1"></div>
+    <div class="hero-glow g2"></div>
+
+    <div class="hero-content">
+      <!-- Brand badge -->
+      <div class="brand-header">
+        <span class="brand-title">TYOFARM</span>
+      </div>
+
+      <div class="hero-tagline-wrap">
+        <h1 class="hero-headline">
+          Menyediakan Hewan<br />
+          <span class="hl-aqiqah">Aqiqah</span>
+          <span class="hl-amp">&amp;</span>
+          <span class="hl-qurban">Qurban</span>
+        </h1>
+        <p class="hero-sub">
+          Gratis biaya perawatan dan pengiriman sampai lokasi
+        </p>
+      </div>
+
+      <!-- Syariat badge -->
+      <div class="syariat-badge">
+        <span class="sb-icon">✅</span>
+        <span>Sehat &amp; Sesuai Syariat</span>
+      </div>
+
+      <!-- CTA Buttons -->
+      <div class="hero-ctas">
+        <a href="https://wa.me/6289622858666?text=Assalamualaikum%20TYOFARM%2C%20saya%20ingin%20memesan%20hewan%20aqiqah%2Fqurban" class="btn-wa" target="_blank" rel="noopener">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.940 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.390-1.475-.883-.788-1.480-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.360.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Pesan via WhatsApp
+        </a>
+        <a href="#hewan" class="btn-lihat">Lihat Hewan ↓</a>
+      </div>
+
+      <!-- Stats bar -->
+      <div class="hero-stats">
+        <div class="hs-item">
+          <span class="hs-num" data-target="200">0</span><span class="hs-plus">+</span>
+          <span class="hs-label">Hewan Tersedia</span>
+        </div>
+        <div class="hs-divider"></div>
+        <div class="hs-item">
+          <span class="hs-num" data-target="5">0</span><span class="hs-plus">+</span>
+          <span class="hs-label">Tahun Melayani</span>
+        </div>
+        <div class="hs-divider"></div>
+        <div class="hs-item">
+          <span class="hs-num" data-target="1000">0</span><span class="hs-plus">+</span>
+          <span class="hs-label">Pelanggan Puas</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero image -->
+    <div class="hero-img-section">
+      <div class="hero-img-frame">
+        <img src="assets/aqiqah_qurban_hero.jpg" alt="Hewan Aqiqah dan Qurban TYOFARM" class="hero-img" />
+        <!-- floating badges -->
+        <div class="hib hib-top">
+          <span>🏅</span>
+          <div>
+            <div class="hib-t">Bersertifikat</div>
+            <div class="hib-s">Sesuai Syariat Islam</div>
+          </div>
+        </div>
+        <div class="hib hib-bot">
+          <span>🚚</span>
+          <div>
+            <div class="hib-t">Gratis Antar</div>
+            <div class="hib-s">Sampai Lokasi Anda</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <div class="sh-dot"></div>
+      <span>Scroll untuk info lebih</span>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ MARQUEE ═══════════════════ -->
+  <div class="marquee-bar">
+    <div class="marquee-inner">
+      <span>🐑 Domba Qurban</span>
+      <span>🐐 Kambing Aqiqah</span>
+      <span>🐄 Sapi Qurban</span>
+      <span>✅ Sehat &amp; Sesuai Syariat</span>
+      <span>🚚 Gratis Pengiriman</span>
+      <span>💚 Halal Certified</span>
+      <span>📍 Karawang, Jawa Barat</span>
+      <span>⭐ Terpercaya &amp; Amanah</span>
+      <span>🐑 Domba Qurban</span>
+      <span>🐐 Kambing Aqiqah</span>
+      <span>🐄 Sapi Qurban</span>
+      <span>✅ Sehat &amp; Sesuai Syariat</span>
+      <span>🚚 Gratis Pengiriman</span>
+      <span>💚 Halal Certified</span>
+      <span>📍 Karawang, Jawa Barat</span>
+      <span>⭐ Terpercaya &amp; Amanah</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════ LAYANAN ═══════════════════ -->
+  <section class="section" id="layanan">
+    <div class="container">
+      <div class="section-chip">Layanan Kami</div>
+      <h2 class="section-title">Kami Siap Bantu <br /><span class="green-text">Ibadah Anda</span></h2>
+
+      <div class="layanan-grid">
+        <div class="layanan-card reveal" id="lc-aqiqah">
+          <div class="lc-icon-wrap lc-green">🐐</div>
+          <h3>Aqiqah</h3>
+          <p>Sediakan kambing aqiqah sesuai syariat islam untuk buah hati Anda. Hewan sehat, usia tepat, dan bebas cacat.</p>
+          <div class="lc-list">
+            <div class="lc-item">✓ Laki-laki: 2 ekor kambing</div>
+            <div class="lc-item">✓ Perempuan: 1 ekor kambing</div>
+            <div class="lc-item">✓ Perawatan hingga hari H</div>
+          </div>
+          <a href="https://wa.me/6289622858666?text=Assalamualaikum%2C%20saya%20mau%20pesan%20kambing%20aqiqah" class="lc-btn" target="_blank">Pesan Aqiqah</a>
+        </div>
+
+        <div class="layanan-card reveal delay-1" id="lc-qurban">
+          <div class="lc-icon-wrap lc-gold">🐑</div>
+          <h3>Qurban</h3>
+          <p>Sediakan hewan qurban terbaik untuk Idul Adha. Domba dan sapi pilihan yang memenuhi syarat syariat.</p>
+          <div class="lc-list">
+            <div class="lc-item">✓ Domba / kambing qurban</div>
+            <div class="lc-item">✓ Sapi qurban (share 7 orang)</div>
+            <div class="lc-item">✓ Siap antar hari H</div>
+          </div>
+          <a href="https://wa.me/6289622858666?text=Assalamualaikum%2C%20saya%20mau%20pesan%20hewan%20qurban" class="lc-btn lc-btn-gold" target="_blank">Pesan Qurban</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ PILIHAN HEWAN ═══════════════════ -->
+  <section class="section section-alt" id="hewan">
+    <div class="container">
+      <div class="section-chip">Pilihan Hewan</div>
+      <h2 class="section-title">Semua Hewan <span class="green-text">Sehat &amp; Berkualitas</span></h2>
+
+      <div class="hewan-grid">
+
+        <div class="hewan-card reveal" id="hw-kambing">
+          <div class="hc-img-wrap">
+            <img src="assets/kambing_aqiqah.jpg" alt="Kambing Aqiqah" />
+            <div class="hc-badge">Paling Laris</div>
+          </div>
+          <div class="hc-body">
+            <div class="hc-category">🐐 Kambing</div>
+            <h3 class="hc-name">Kambing Kacang / PE</h3>
+            <p class="hc-desc">Kambing jantan dan betina usia minimal 1 tahun, sehat, tidak cacat, cocok untuk aqiqah maupun qurban.</p>
+            <div class="hc-specs">
+              <div class="hc-spec"><span>⚖️</span> 15–25 kg</div>
+              <div class="hc-spec"><span>📅</span> Min. 1 tahun</div>
+              <div class="hc-spec"><span>❤️</span> Sehat &amp; Aktif</div>
+            </div>
+            <div class="hc-price">
+              <span class="hc-price-label">Mulai dari</span>
+              <span class="hc-price-val">Rp 1.800.000</span>
+            </div>
+            <a href="https://wa.me/6289622858666?text=Assalamualaikum%2C%20saya%20tertarik%20dengan%20kambing%20untuk%20aqiqah%2Fqurban" class="hc-btn" target="_blank">Tanya Harga</a>
+          </div>
+        </div>
+
+        <div class="hewan-card reveal delay-1" id="hw-domba">
+          <div class="hc-img-wrap">
+            <img src="assets/goat_farm_hero.jpg" alt="Domba Qurban" />
+          </div>
+          <div class="hc-body">
+            <div class="hc-category">🐑 Domba</div>
+            <h3 class="hc-name">Domba Garut / Merino</h3>
+            <p class="hc-desc">Domba jantan bertubuh besar, berbulu lebat, usia minimal 1 tahun. Ideal untuk qurban Idul Adha.</p>
+            <div class="hc-specs">
+              <div class="hc-spec"><span>⚖️</span> 25–40 kg</div>
+              <div class="hc-spec"><span>📅</span> Min. 1 tahun</div>
+              <div class="hc-spec"><span>❤️</span> Gemuk &amp; Sehat</div>
+            </div>
+            <div class="hc-price">
+              <span class="hc-price-label">Mulai dari</span>
+              <span class="hc-price-val">Rp 2.500.000</span>
+            </div>
+            <a href="https://wa.me/6289622858666?text=Assalamualaikum%2C%20saya%20tertarik%20dengan%20domba%20qurban" class="hc-btn" target="_blank">Tanya Harga</a>
+          </div>
+        </div>
+
+        <div class="hewan-card reveal delay-2" id="hw-sapi">
+          <div class="hc-img-wrap">
+            <img src="assets/farm_landscape.jpg" alt="Sapi Qurban" />
+          </div>
+          <div class="hc-body">
+            <div class="hc-category">🐄 Sapi</div>
+            <h3 class="hc-name">Sapi Simmental / Limosin</h3>
+            <p class="hc-desc">Sapi jantan bertubuh besar dan sehat. Bisa dibeli sendiri atau patungan dengan 6 orang lainnya (7 bagian).</p>
+            <div class="hc-specs">
+              <div class="hc-spec"><span>⚖️</span> 250–400 kg</div>
+              <div class="hc-spec"><span>📅</span> Min. 2 tahun</div>
+              <div class="hc-spec"><span>👥</span> Bisa patungan</div>
+            </div>
+            <div class="hc-price">
+              <span class="hc-price-label">Mulai dari</span>
+              <span class="hc-price-val">Rp 18.000.000</span>
+            </div>
+            <a href="https://wa.me/6289622858666?text=Assalamualaikum%2C%20saya%20tertarik%20dengan%20sapi%20qurban" class="hc-btn" target="_blank">Tanya Harga</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ KEUNGGULAN ═══════════════════ -->
+  <section class="section" id="keunggulan">
+    <div class="container">
+      <div class="section-chip">Mengapa Kami</div>
+      <h2 class="section-title">Kenapa Pilih <span class="green-text">TYOFARM?</span></h2>
+
+      <div class="unggulan-grid">
+        <div class="ug-card reveal" id="ug-1">
+          <div class="ug-icon">🚚</div>
+          <h3>Gratis Antar ke Lokasi</h3>
+          <p>Tidak perlu repot ambil sendiri. Kami antar hewan langsung ke lokasi penyembelihan Anda tanpa biaya tambahan.</p>
+        </div>
+        <div class="ug-card reveal delay-1" id="ug-2">
+          <div class="ug-icon">🏥</div>
+          <h3>Gratis Biaya Perawatan</h3>
+          <p>Dari pembelian hingga hari H, biaya pakan dan perawatan hewan sepenuhnya kami tanggung.</p>
+        </div>
+        <div class="ug-card reveal delay-2" id="ug-3">
+          <div class="ug-icon">✅</div>
+          <h3>Sesuai Syariat Islam</h3>
+          <p>Semua hewan memenuhi kriteria syariat: usia cukup, sehat, tidak cacat, dan dijamin halal.</p>
+        </div>
+        <div class="ug-card reveal delay-3" id="ug-4">
+          <div class="ug-icon">🔍</div>
+          <h3>Bisa Pilih Langsung</h3>
+          <p>Anda bisa datang langsung ke kandang kami untuk memilih hewan yang paling sesuai keinginan.</p>
+        </div>
+        <div class="ug-card reveal" id="ug-5">
+          <div class="ug-icon">📜</div>
+          <h3>Dokumen Lengkap</h3>
+          <p>Setiap hewan disertai surat keterangan kesehatan hewan dari dokter hewan berpengalaman.</p>
+        </div>
+        <div class="ug-card reveal delay-1" id="ug-6">
+          <div class="ug-icon">🤝</div>
+          <h3>Amanah &amp; Terpercaya</h3>
+          <p>5 tahun melayani ribuan keluarga di Karawang dan sekitarnya dengan penuh amanah dan kejujuran.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ PROSES ═══════════════════ -->
+  <section class="section section-alt" id="proses">
+    <div class="container">
+      <div class="section-chip">Cara Pesan</div>
+      <h2 class="section-title">Mudah &amp; <span class="green-text">Cepat</span></h2>
+
+      <div class="proses-timeline">
+        <div class="pt-item reveal">
+          <div class="pt-num">1</div>
+          <div class="pt-body">
+            <h3>Hubungi Kami</h3>
+            <p>Chat WhatsApp atau telepon langsung ke nomor Mizan atau Adityo untuk konsultasi gratis.</p>
+          </div>
+        </div>
+        <div class="pt-connector"></div>
+        <div class="pt-item reveal delay-1">
+          <div class="pt-num">2</div>
+          <div class="pt-body">
+            <h3>Pilih Hewan</h3>
+            <p>Pilih jenis dan ukuran hewan sesuai kebutuhan aqiqah atau qurban Anda. Bisa kunjungi kandang langsung.</p>
+          </div>
+        </div>
+        <div class="pt-connector"></div>
+        <div class="pt-item reveal delay-2">
+          <div class="pt-num">3</div>
+          <div class="pt-body">
+            <h3>Konfirmasi &amp; DP</h3>
+            <p>Lakukan konfirmasi pemesanan dengan down payment. Kami simpankan dan rawat hewan Anda.</p>
+          </div>
+        </div>
+        <div class="pt-connector"></div>
+        <div class="pt-item reveal delay-3">
+          <div class="pt-num">4</div>
+          <div class="pt-body">
+            <h3>Antar ke Lokasi</h3>
+            <p>Pada hari H, kami antarkan hewan langsung ke lokasi penyembelihan Anda. Gratis biaya pengiriman!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ TESTIMONI ═══════════════════ -->
+  <section class="section" id="testimoni">
+    <div class="container">
+      <div class="section-chip">Testimoni</div>
+      <h2 class="section-title">Kata <span class="green-text">Pelanggan Kami</span></h2>
+
+      <div class="testi-wrap">
+        <div class="testi-track" id="testiTrack">
+
+          <div class="tc">
+            <div class="tc-stars">⭐⭐⭐⭐⭐</div>
+            <p>"Alhamdulillah, kambing aqiqahnya sehat dan gemuk banget. Datang tepat waktu ke rumah. Sangat amanah dan recommended!"</p>
+            <div class="tc-user">
+              <div class="tc-av">AR</div>
+              <div>
+                <div class="tc-name">Ahmad Ridwan</div>
+                <div class="tc-loc">📍 Karawang Barat</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tc">
+            <div class="tc-stars">⭐⭐⭐⭐⭐</div>
+            <p>"Tahun ini udah ke-3 kali beli hewan qurban di TYOFARM. Sapi-nya bagus, besar, sesuai syariat. Gratis anterin pula!"</p>
+            <div class="tc-user">
+              <div class="tc-av">BH</div>
+              <div>
+                <div class="tc-name">Bapak Hasan</div>
+                <div class="tc-loc">📍 Cilamaya Karawang</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tc">
+            <div class="tc-stars">⭐⭐⭐⭐⭐</div>
+            <p>"Pelayanannya sangat ramah dan profesional. Kambing aqiqah anak saya sehat, tidak ada cacat. Jazakallah khair!"</p>
+            <div class="tc-user">
+              <div class="tc-av">NU</div>
+              <div>
+                <div class="tc-name">Nurul Hasanah</div>
+                <div class="tc-loc">📍 Cikampek</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tc">
+            <div class="tc-stars">⭐⭐⭐⭐⭐</div>
+            <p>"Harga terjangkau, kualitas hewan premium. Yang paling berkesan adalah kejujuran dan keamanahan mereka."</p>
+            <div class="tc-user">
+              <div class="tc-av">DS</div>
+              <div>
+                <div class="tc-name">Dedi Syarif</div>
+                <div class="tc-loc">📍 Purwakarta</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="testi-dots" id="testiDots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ COUNTER STRIP ═══════════════════ -->
+  <div class="counter-strip">
+    <div class="cs-grid">
+      <div class="cs-item">
+        <div class="cs-icon">🐐</div>
+        <div class="cs-num" data-target="200">0</div><span>+</span>
+        <div class="cs-label">Hewan Tersedia</div>
+      </div>
+      <div class="cs-item">
+        <div class="cs-icon">👨‍👩‍👧</div>
+        <div class="cs-num" data-target="1000">0</div><span>+</span>
+        <div class="cs-label">Keluarga Dilayani</div>
+      </div>
+      <div class="cs-item">
+        <div class="cs-icon">📅</div>
+        <div class="cs-num" data-target="5">0</div><span>+</span>
+        <div class="cs-label">Tahun Pengalaman</div>
+      </div>
+      <div class="cs-item">
+        <div class="cs-icon">⭐</div>
+        <div class="cs-num" data-target="5">0</div><span>/5</span>
+        <div class="cs-label">Rating Kepuasan</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════ KONTAK / CTA ═══════════════════ -->
+  <section class="section" id="kontak">
+    <div class="container">
+      <div class="kontak-card">
+        <div class="kc-pattern"></div>
+        <div class="section-chip">Hubungi Kami</div>
+        <h2 class="kc-title">
+          Siap Bantu Ibadah<br />
+          <span class="green-text">Aqiqah &amp; Qurban Anda</span>
+        </h2>
+        <p class="kc-desc">Konsultasi gratis! Tim kami siap membantu Anda memilih hewan yang tepat sesuai syariat dan anggaran.</p>
+
+        <!-- Contact persons -->
+        <div class="cp-grid">
+          <a href="https://wa.me/6289622858666" class="cp-card" target="_blank" rel="noopener" id="contact-mizan">
+            <div class="cp-avatar">MZ</div>
+            <div class="cp-info">
+              <div class="cp-name">Mizan</div>
+              <div class="cp-num">0896-2285-8666</div>
+            </div>
+            <div class="cp-wa">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.940 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.390-1.475-.883-.788-1.480-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.360.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
+            </div>
+          </a>
+          <a href="https://wa.me/6282211472375" class="cp-card" target="_blank" rel="noopener" id="contact-adityo">
+            <div class="cp-avatar">AD</div>
+            <div class="cp-info">
+              <div class="cp-name">Adityo</div>
+              <div class="cp-num">0822-1147-2375</div>
+            </div>
+            <div class="cp-wa">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.940 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.390-1.475-.883-.788-1.480-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.360.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
+            </div>
+          </a>
+        </div>
+
+        <!-- Address -->
+        <div class="kc-address">
+          <div class="addr-icon">📍</div>
+          <div>
+            <div class="addr-label">Alamat Kandang</div>
+            <div class="addr-text">Dusun Krajan II RT.006/002<br />Desa Bengle, Kecamatan Majalaya<br />Kabupaten Karawang, Jawa Barat</div>
+          </div>
+        </div>
+
+        <!-- Map placeholder -->
+        <a href="https://maps.google.com/?q=Desa+Bengle+Majalaya+Karawang" target="_blank" class="kc-map" rel="noopener">
+          <div class="km-inner">
+            <span class="km-pin">📍</span>
+            <span>Buka di Google Maps →</span>
+          </div>
+        </a>
+
+        <div class="kc-note">
+          <span>🕐</span>
+          Buka setiap hari, Pukul 07.00 – 18.00 WIB
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ FOOTER ═══════════════════ -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="ft-brand">
+        <span>🐑</span>
+        <span class="ft-name">TYOFARM</span>
+      </div>
+      <p class="ft-tagline">Sehat &amp; Sesuai Syariat · Karawang, Jawa Barat</p>
+      <div class="ft-socials">
+        <a href="#" class="ft-soc" aria-label="Instagram">📸</a>
+        <a href="#" class="ft-soc" aria-label="Facebook">💬</a>
+        <a href="https://wa.me/6289622858666" class="ft-soc" aria-label="WhatsApp">📲</a>
+      </div>
+    </div>
+    <div class="footer-bot">
+      © 2026 TYOFARM. Hak Cipta Dilindungi.
+    </div>
+  </footer>
+
+  <!-- ═══════════════════ STICKY WA BUTTON ═══════════════════ -->
+  <a href="https://wa.me/6289622858666?text=Assalamualaikum%20TYOFARM%2C%20saya%20ingin%20konsultasi%20mengenai%20hewan%20aqiqah%2Fqurban" class="sticky-wa" target="_blank" rel="noopener" aria-label="WhatsApp TYOFARM" id="stickyWa">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.940 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.390-1.475-.883-.788-1.480-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.360.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span>Chat Sekarang</span>
+    <div class="wa-pulse"></div>
+  </a>
+
+  <!-- ═══════════════════ BACK TO TOP ═══════════════════ -->
+  <button class="back-top" id="backTop" onclick="scrollToTop()" aria-label="Kembali ke atas">↑</button>
+
+  <!-- ═══════════════════ PARTICLE CANVAS ═══════════════════ -->
+  <canvas id="particleCanvas" style="position:fixed;inset:0;pointer-events:none;z-index:0;opacity:0.25;"></canvas>
+
+  <script src="app.js"></script>
+</body>
+</html>

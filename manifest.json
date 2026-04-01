@@ -1,0 +1,27 @@
+{
+  "name": "TYOFARM – Peternakan Kambing Modern",
+  "short_name": "TYOFARM",
+  "description": "Peternakan kambing modern dan berkelanjutan. Susu segar, keju artisan, dan produk alami berkualitas tinggi.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0c1f17",
+  "theme_color": "#1a6b4a",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["food", "shopping", "lifestyle"],
+  "lang": "id",
+  "dir": "ltr"
+}
